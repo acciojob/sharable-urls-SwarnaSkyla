@@ -7,5 +7,5 @@ document.getElementById("myForm").addEventListener("submit",function(event){
 
 	const queryString=`name=${encodeURIComponent(name)}&year=${encodeURIComponent(year)}`;
 
-	document.getElementById("url").textContent="https://localhost:8080/"+queryString;
+	document.getElementById("url").textContent="https://localhost:8080/?"+queryString;
 });
